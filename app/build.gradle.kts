@@ -24,11 +24,11 @@ dependencies {
 }
 
 android {
-    namespace = "app.morphe.standalone"
+    namespace = "me.jaival.files"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "app.morphe.standalone"
+        applicationId = "me.jaival.files"
         minSdk = 26
         versionCode = 1
         versionName = "1.0"
