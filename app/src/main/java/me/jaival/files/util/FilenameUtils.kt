@@ -1,4 +1,4 @@
-package app.morphe.standalone.util
+package me.jaival.files.util
 
 /**
  * Utility helpers for working with filenames.

@@ -3,7 +3,7 @@
  * https://github.com/MorpheApp/morphe-manager
  */
 
-package app.morphe.standalone.ui.screen.shared
+package me.jaival.files.ui.screen.shared
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -27,7 +27,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
-import app.morphe.standalone.R
+import me.jaival.files.R
 
 @Composable
 private fun morpheDialogTextFieldColors(textColor: Color) = OutlinedTextFieldDefaults.colors(

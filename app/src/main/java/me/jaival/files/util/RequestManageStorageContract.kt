@@ -1,4 +1,4 @@
-package app.morphe.standalone.util
+package me.jaival.files.util
 
 import android.content.Context
 import android.content.Intent

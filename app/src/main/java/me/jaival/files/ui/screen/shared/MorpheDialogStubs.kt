@@ -1,4 +1,4 @@
-package app.morphe.standalone.ui.screen.shared
+package me.jaival.files.ui.screen.shared
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.*

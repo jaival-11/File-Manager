@@ -1,4 +1,4 @@
-package app.morphe.standalone.data.platform
+package me.jaival.files.data.platform
 
 import android.Manifest
 import android.app.Application
@@ -9,9 +9,9 @@ import android.os.Environment
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
-import app.morphe.standalone.util.FilenameUtils
-import app.morphe.standalone.util.RequestManageStorageContract
-import app.morphe.standalone.util.formatBytes
+import me.jaival.files.util.FilenameUtils
+import me.jaival.files.util.RequestManageStorageContract
+import me.jaival.files.util.formatBytes
 import java.io.File
 
 private const val TAG = "Morphe Filesystem"

@@ -1,4 +1,4 @@
-package app.morphe.standalone.ui.screen.shared
+package me.jaival.files.ui.screen.shared
 
 import android.content.Context
 import android.content.res.Configuration

@@ -1,4 +1,4 @@
-package app.morphe.standalone.util
+package me.jaival.files.util
 
 import android.annotation.SuppressLint
 import android.app.Application

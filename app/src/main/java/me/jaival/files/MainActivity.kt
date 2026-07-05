@@ -1,4 +1,4 @@
-package app.morphe.standalone
+package me.jaival.files
 
 import android.app.Application
 import android.content.Context
@@ -25,10 +25,10 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
-import app.morphe.standalone.data.platform.Filesystem
-import app.morphe.standalone.domain.manager.PreferencesManager
-import app.morphe.standalone.ui.screen.shared.FilePicker
-import app.morphe.standalone.util.PM
+import me.jaival.files.data.platform.Filesystem
+import me.jaival.files.domain.manager.PreferencesManager
+import me.jaival.files.ui.screen.shared.FilePicker
+import me.jaival.files.util.PM
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import org.koin.dsl.module

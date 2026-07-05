@@ -3,11 +3,11 @@
  * https://github.com/MorpheApp/morphe-manager
  */
 
-package app.morphe.standalone.util
+package me.jaival.files.util
 
 import androidx.compose.ui.graphics.Color
-import app.morphe.standalone.util.KnownApps.DEFAULT_COLORS
-import app.morphe.standalone.util.KnownApps.getAppName
+import me.jaival.files.util.KnownApps.DEFAULT_COLORS
+import me.jaival.files.util.KnownApps.getAppName
 
 const val tag = "Morphe Manager"
 

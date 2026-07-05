@@ -3,7 +3,7 @@
  * https://github.com/MorpheApp/morphe-manager
  */
 
-package app.morphe.standalone.util
+package me.jaival.files.util
 
 import android.app.UiModeManager
 import android.content.ContentResolver
@@ -19,9 +19,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
-import app.morphe.standalone.data.platform.Filesystem
-import app.morphe.standalone.domain.manager.PreferencesManager
-import app.morphe.standalone.ui.screen.shared.FilePicker
+import me.jaival.files.data.platform.Filesystem
+import me.jaival.files.domain.manager.PreferencesManager
+import me.jaival.files.ui.screen.shared.FilePicker
 import org.koin.compose.koinInject
 import java.io.File
 import java.util.zip.ZipInputStream

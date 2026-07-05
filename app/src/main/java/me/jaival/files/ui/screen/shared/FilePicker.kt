@@ -3,7 +3,7 @@
  * https://github.com/MorpheApp/morphe-manager
  */
 
-package app.morphe.standalone.ui.screen.shared
+package me.jaival.files.ui.screen.shared
 
 import android.content.Context
 import android.content.pm.PackageInfo
@@ -44,11 +44,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.createBitmap
-import app.morphe.standalone.R
-import app.morphe.standalone.domain.manager.PreferencesManager
-import app.morphe.standalone.util.APK_EXTENSIONS
-import app.morphe.standalone.util.PM
-import app.morphe.standalone.util.formatBytes
+import me.jaival.files.R
+import me.jaival.files.domain.manager.PreferencesManager
+import me.jaival.files.util.APK_EXTENSIONS
+import me.jaival.files.util.PM
+import me.jaival.files.util.formatBytes
 import com.topjohnwu.superuser.Shell
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
