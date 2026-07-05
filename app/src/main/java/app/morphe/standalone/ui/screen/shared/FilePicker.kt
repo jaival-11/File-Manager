@@ -346,7 +346,6 @@ fun FilePicker(
             // New content appears instantly; old content fades out
             AnimatedContent(
                 targetState = showSearch,
-                transitionSpec = { androidx.compose.animation.fadeIn() togetherWith androidx.compose.animation.fadeOut() },
                 modifier = Modifier
                     .fillMaxWidth()
                     .statusBarsPadding()
