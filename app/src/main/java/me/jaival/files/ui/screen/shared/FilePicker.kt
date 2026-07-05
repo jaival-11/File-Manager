@@ -6,7 +6,6 @@
 package me.jaival.files.ui.screen.shared
 
 import me.jaival.files.R
-
 import android.content.Context
 import android.content.pm.PackageInfo
 import android.graphics.BitmapFactory
