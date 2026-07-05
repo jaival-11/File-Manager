@@ -31,6 +31,9 @@ import androidx.compose.material.icons.automirrored.outlined.Sort
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.activity.compose.BackHandler
+import android.widget.Toast
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -666,14 +669,10 @@ fun FilePicker(
                     .padding(horizontal = 16.dp, vertical = 12.dp),
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                MorpheDialogOutlinedButton(
-                    text = stringResource(R.string.close),
-                    onClick = onDismiss,
-                    modifier = Modifier.weight(1f)
-                )
+                /* Close button removed */
                 if (allowFolderSelection) {
                     MorpheDialogButton(
-                        text = stringResource(R.string.select_folder),
+                        text = "Monet Files",
                         onClick = { currentDir?.let { onFilePicked(it) } },
                         enabled = currentDir != null,
                         modifier = Modifier.weight(1f)
