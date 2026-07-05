@@ -65,7 +65,7 @@ fun MorpheDialog(
     onEntered: (() -> Unit)? = null,
     content: @Composable ColumnScope.() -> Unit
 ) {
-    val isDarkTheme = MaterialTheme.colorScheme.background.isDarkBackground()
+    val isDarkTheme = MaterialTheme.colorScheme.background.androidx.compose.foundation.isSystemInDarkTheme()
     var visible by remember { mutableStateOf(false) }
 
     LaunchedEffect(Unit) {

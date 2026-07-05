@@ -11,7 +11,15 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.unit.dp
 import java.io.File
+
+val ContentPadding = 16.dp
+val ItemSpacing = 8.dp
+val dialogEnter = fadeIn(tween(300)) + scaleIn(initialScale = 0.9f)
+val dialogExit = fadeOut(tween(200)) + scaleOut(targetScale = 0.9f)
+val overlayEnter = fadeIn(tween(300))
+val overlayExit = fadeOut(tween(200))
 
 object MorpheDefaults {
     const val ANIMATION_DURATION = 300
@@ -34,12 +42,7 @@ fun EmptyState(
 }
 
 @Composable
-fun isDarkBackground() = isSystemInDarkTheme()
-
-@Composable
 fun isLandscape() = LocalConfiguration.current.orientation == Configuration.ORIENTATION_LANDSCAPE
-
-val WideNavigationRailValue = false
 
 fun Context.externalStorageVolumes(): List<Pair<Boolean, File>> {
     return listOf(true to Environment.getExternalStorageDirectory())

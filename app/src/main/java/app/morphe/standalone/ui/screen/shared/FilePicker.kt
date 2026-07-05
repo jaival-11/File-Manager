@@ -48,7 +48,6 @@ import app.morphe.standalone.R
 import app.morphe.standalone.domain.manager.PreferencesManager
 import app.morphe.standalone.util.APK_EXTENSIONS
 import app.morphe.standalone.util.PM
-import app.morphe.standalone.util.externalStorageVolumes
 import app.morphe.standalone.util.formatBytes
 import com.topjohnwu.superuser.Shell
 import kotlinx.coroutines.Dispatchers
@@ -347,7 +346,7 @@ fun FilePicker(
             // New content appears instantly; old content fades out
             AnimatedContent(
                 targetState = showSearch,
-                transitionSpec = MorpheAnimations.fadeCrossfade(),
+                transitionSpec = { MorpheAnimations.fadeCrossfade() },
                 modifier = Modifier
                     .fillMaxWidth()
                     .statusBarsPadding()

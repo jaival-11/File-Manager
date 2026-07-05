@@ -42,7 +42,7 @@ private data class DialogButtonColors(
 private fun resolveButtonColors(isDestructive: Boolean, filled: Boolean): DialogButtonColors {
     val primaryColor = MaterialTheme.colorScheme.primary
     val textColor = LocalDialogTextColor.current
-    val isDark = !textColor.isDarkBackground()
+    val isDark = !textColor.androidx.compose.foundation.isSystemInDarkTheme()
 
     return if (isDestructive) {
         DialogButtonColors(
