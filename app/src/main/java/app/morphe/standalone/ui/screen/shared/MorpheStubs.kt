@@ -1,0 +1,46 @@
+package app.morphe.standalone.ui.screen.shared
+
+import android.content.Context
+import android.content.res.Configuration
+import android.os.Environment
+import androidx.compose.animation.*
+import androidx.compose.animation.core.tween
+import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.foundation.layout.Box
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalConfiguration
+import java.io.File
+
+object MorpheDefaults {
+    const val ANIMATION_DURATION = 300
+}
+
+object MorpheAnimations {
+    fun <T> fadeCrossfade() = fadeIn(tween(300)) togetherWith fadeOut(tween(300))
+    val expandFadeEnter = fadeIn() + expandVertically()
+    val shrinkFadeExit = fadeOut() + shrinkVertically()
+}
+
+@Composable
+fun EmptyState(
+    message: String,
+    icon: ImageVector,
+    actionLabel: String? = null,
+    onAction: (() -> Unit)? = null
+) {
+    Box { Text(text = message) }
+}
+
+@Composable
+fun isDarkBackground() = isSystemInDarkTheme()
+
+@Composable
+fun isLandscape() = LocalConfiguration.current.orientation == Configuration.ORIENTATION_LANDSCAPE
+
+val WideNavigationRailValue = false
+
+fun Context.externalStorageVolumes(): List<Pair<Boolean, File>> {
+    return listOf(true to Environment.getExternalStorageDirectory())
+}
