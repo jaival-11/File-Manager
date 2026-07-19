@@ -38,7 +38,7 @@ class PM(
     private val app: Application
 ) {
     private companion object {
-        const val TAG = "Morphe PM"
+        const val TAG = "SimpleFileManager PM"
     }
 
     val application: Application get() = app

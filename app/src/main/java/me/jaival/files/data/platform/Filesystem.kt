@@ -14,7 +14,7 @@ import me.jaival.files.util.RequestManageStorageContract
 import me.jaival.files.util.formatBytes
 import java.io.File
 
-private const val TAG = "Morphe Filesystem"
+private const val TAG = "SimpleFileManager Filesystem"
 
 class Filesystem(private val app: Application) {
     /**

@@ -320,7 +320,7 @@ fun FilePicker(
             searchFocusRequester.requestFocus()
         } else {
             // Clear query only after the exit animation finishes so the text doesn't flash away
-            delay(MorpheDefaults.ANIMATION_DURATION.toLong().milliseconds)
+            delay(SimpleFileManagerDefaults.ANIMATION_DURATION.toLong().milliseconds)
             searchQuery = ""
         }
     }
@@ -375,7 +375,7 @@ fun FilePicker(
     }
 
 
-    MorpheDialog(
+    SimpleFileManagerDialog(
         onDismissRequest = {
             when {
                 showLicensesDialog -> { showLicensesDialog = false }
@@ -533,8 +533,8 @@ fun FilePicker(
 
             AnimatedVisibility(
                 visible = currentDir != null,
-                enter = MorpheAnimations.expandFadeEnter,
-                exit = MorpheAnimations.shrinkFadeExit
+                enter = SimpleFileManagerAnimations.expandFadeEnter,
+                exit = SimpleFileManagerAnimations.shrinkFadeExit
             ) {
                 Column {
                     Box {
@@ -742,8 +742,8 @@ fun FilePicker(
             ) {
                 /* Close button removed */
                 if (allowFolderSelection) {
-                    MorpheDialogButton(
-                        text = "Monet Files",
+                    SimpleFileManagerDialogButton(
+                        text = "Simple File Manager",
                         onClick = { currentDir?.let { onFilePicked(it) } },
                         enabled = currentDir != null,
                         modifier = Modifier.weight(1f)

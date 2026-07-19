@@ -9,13 +9,13 @@ import androidx.compose.ui.graphics.Color
 import me.jaival.files.util.KnownApps.DEFAULT_COLORS
 import me.jaival.files.util.KnownApps.getAppName
 
-const val tag = "Morphe Manager"
+const val tag = "Simple File Manager"
 
-const val SOURCE_NAME = "Morphe Patches"
-const val MANAGER_REPO_URL = "https://github.com/MorpheApp/morphe-manager"
-const val SOURCE_REPO_URL = "https://github.com/MorpheApp/morphe-patches"
-const val MORPHE_API_URL = "https://api.morphe.software"
-const val MORPHE_WEBSITE_URL = "https://morphe.software"
+const val SOURCE_NAME = "SimpleFileManager"
+const val MANAGER_REPO_URL = ""
+const val SOURCE_REPO_URL = ""
+const val MORPHE_API_URL = ""
+const val MORPHE_WEBSITE_URL = ""
 
 /**
  * Delay before showing a manager update notification to the user.
@@ -24,15 +24,15 @@ const val MORPHE_WEBSITE_URL = "https://morphe.software"
 const val MANAGER_UPDATE_SHOW_DELAY_SECONDS = 7 * 60
 
 /** Raw GitHub URL for the stable manager release JSON (main branch) */
-const val MANAGER_RELEASE_JSON_URL = "https://raw.githubusercontent.com/MorpheApp/morphe-manager/refs/heads/main/app-release.json"
+const val MANAGER_RELEASE_JSON_URL = ""
 
 /** Raw GitHub URL for the pre-release manager release JSON (dev branch) */
-const val MANAGER_PRERELEASE_JSON_URL = "https://raw.githubusercontent.com/MorpheApp/morphe-manager/refs/heads/dev/app-release.json"
+const val MANAGER_PRERELEASE_JSON_URL = ""
 
 /** Controls whether manager updates are fetched directly from JSON files in the repository instead of using the GitHub API */
 const val USE_MANAGER_DIRECT_JSON = true
 
-/** Controls whether patches are fetched directly from JSON files in the repository instead of using the Morphe API */
+/** Controls whether patches are fetched directly from JSON files in the repository instead of using the SimpleFileManager API */
 const val USE_PATCHES_DIRECT_JSON = true
 
 /**

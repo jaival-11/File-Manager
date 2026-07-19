@@ -9,7 +9,7 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:allowBackup="true"
-        android:label="Simple File Manager"
+        android:label="@string/app_name"
         android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
         android:supportsRtl="true"
         android:requestLegacyExternalStorage="true">

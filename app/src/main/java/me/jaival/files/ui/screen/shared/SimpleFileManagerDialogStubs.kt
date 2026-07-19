@@ -10,7 +10,7 @@ val LocalDialogTextColor = compositionLocalOf { Color.Black }
 val LocalDialogSecondaryTextColor = compositionLocalOf { Color.Gray }
 
 @Composable
-fun MorpheDialog(
+fun SimpleFileManagerDialog(
     onDismissRequest: () -> Unit,
     title: String? = null,
     noPadding: Boolean = false,
@@ -18,7 +18,6 @@ fun MorpheDialog(
     footer: (@Composable () -> Unit)? = null,
     content: @Composable () -> Unit
 ) {
-    // Removed the Dialog wrapper and added Modifier.fillMaxSize()
     Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         CompositionLocalProvider(
             LocalDialogTextColor provides MaterialTheme.colorScheme.onBackground,
@@ -30,7 +29,7 @@ fun MorpheDialog(
 }
 
 @Composable
-fun MorpheDialogButton(
+fun SimpleFileManagerDialogButton(
     text: String,
     onClick: () -> Unit,
     enabled: Boolean = true,
@@ -42,7 +41,7 @@ fun MorpheDialogButton(
 }
 
 @Composable
-fun MorpheDialogOutlinedButton(
+fun SimpleFileManagerDialogOutlinedButton(
     text: String,
     onClick: () -> Unit,
     enabled: Boolean = true,

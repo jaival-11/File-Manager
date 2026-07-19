@@ -12,7 +12,8 @@ You are an expert Android developer specializing in Kotlin, Jetpack Compose (Mat
 ## Android Hygiene & Permissions
 - **Strict Permissions:** Do not add invasive permissions to the `AndroidManifest.xml`. Specifically, never add `QUERY_ALL_PACKAGES`. Rely on native Android intents (like `Intent.createChooser`) for system-level actions.
 - **Navigation:** Handle back-presses natively using Compose `BackHandler`. Always account for the root storage directory to prevent accidental app closures, and implement double-tap-to-exit logic for the root level.
-- **Resource Naming:** The application is called "Monet Files". Do not introduce legacy strings or namespaces referring to "Morphe".
+- **Resource Naming:** The application is called "Simple File Manager". Do not introduce legacy strings or namespaces referring to "Morphe".
+- **Metadata:** Never attempt to make edit to metadata directory
 
 ## State & Architecture
 - **Dependency Injection:** Use Koin for injecting dependencies (e.g., `PreferencesManager(get())`).

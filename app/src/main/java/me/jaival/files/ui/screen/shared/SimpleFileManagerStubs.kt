@@ -21,11 +21,11 @@ val dialogExit = fadeOut(tween(200)) + scaleOut(targetScale = 0.9f)
 val overlayEnter = fadeIn(tween(300))
 val overlayExit = fadeOut(tween(200))
 
-object MorpheDefaults {
+object SimpleFileManagerDefaults {
     const val ANIMATION_DURATION = 300
 }
 
-object MorpheAnimations {
+object SimpleFileManagerAnimations {
     fun <T> fadeCrossfade() = fadeIn(tween(300)) togetherWith fadeOut(tween(300))
     val expandFadeEnter = fadeIn() + expandVertically()
     val shrinkFadeExit = fadeOut() + shrinkVertically()

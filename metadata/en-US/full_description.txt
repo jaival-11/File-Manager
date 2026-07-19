@@ -1,0 +1,1 @@
+Simple File Manager is, as the name suggests, a simple file manager period. It does not have many features except the necessary feature of browsing files and material theming
